@@ -1,8 +1,16 @@
 It occurs when we give some wrong argument type to a function.
 
-TalendDate.compareDate() takes Date as arguments in the format 
+Date class takes Date as arguments in the format 
 
-yyyy/MM//dd HH:mm:ss    or
-yyyy/MM//dd 
+yyyy/MM/dd HH:mm:ss    or
+yyyy/MM/dd 
 
 if yyyy-MM-dd or anything other than the slash (/) is provided, It gives an Illegal Argument Exception.
+
+
+Resolution - 
+
+Use SimpleDateFormat instead.
+
+SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+Date date1 = dateFormat.parse("11-10-2017");
