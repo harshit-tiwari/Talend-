@@ -1,0 +1,8 @@
+It occurs when we give some wrong argument type to a function.
+
+TalendDate.compareDate() takes Date as arguments in the format 
+
+yyyy/MM//dd HH:mm:ss    or
+yyyy/MM//dd 
+
+if yyyy-MM-dd or anything other than the slash (/) is provided, It gives an Illegal Argument Exception.
